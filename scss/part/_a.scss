@@ -8,27 +8,27 @@
 }
 
 // discord friends tab: for some reason not currently using a variable
-.appMount_ea7e65 .container_c2739c {
+.appMount__51fd7 .container__133bf {
     background-color: $background-color;
 }
 
 // Checkboxes
-.appMount_ea7e65 .checkbox_f6cde8.checked_f6cde8 {
+.appMount__51fd7 .checkbox_f525d3.checked_f525d3 {
     border-color: $bright-color !important;
     color: $bright-color;
     background: transparent !important;
 }
 
-.appMount_ea7e65 .checkbox_f6cde8.checked_f6cde8 path {
+.appMount__51fd7 .checkbox_f525d3.checked_f525d3 path {
     fill: currentColor;
 }
 
-.appMount_ea7e65 .checkbox_f6cde8.checked_f6cde8 {
+.appMount__51fd7 .checkbox_f525d3.checked_f525d3 {
     background: $accent-color !important;
     border-color: $accent-color !important;
 }
 
 // Star for verified
-.flowerStar_ff7d90 path {
+.flowerStar__3e3b0 path {
     fill: hsla.default($accent-hue, 0.7);
 }

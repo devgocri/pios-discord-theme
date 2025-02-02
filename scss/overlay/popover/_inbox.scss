@@ -4,22 +4,22 @@
 
 // ---- Inbox popover ----
 // Channel info
-.channelHeader_f3978e {
+.channelHeader__35a7e {
     border-bottom: 2px dashed $border-color-normal;
 }
 
 // Inbox message containers
-.messageContainer_ddb5b4 {
+.messageContainer__95796 {
     padding: 0;
 }
 
-.messages_c06487 {
+.messages__1ccd1 {
     padding: 16px 0 0 0;
 }
 
 // Remove "replied to" in inbox due to space constraint
-.container_ddb5b4 .compact_f9f2ca .repliedMessage_f9f2ca,
-.container_f1c3d9 .compact_f9f2ca .repliedMessage_f9f2ca {
+.container__95796 .compact_c19a55 .repliedMessage_c19a55,
+.container__2692d .compact_c19a55 .repliedMessage_c19a55 {
     display: none;
 }
 
@@ -27,7 +27,7 @@
 .primary_a41c2a:hover:not(.disabled__4d064),
 .secondary__45d4f,
 .tertiary_ad6d80,
-.jumpButton_ac3dc2 {
+.jumpButton_ed0c8c {
     background-color: hsla.default($accent-hue, 0.3);
 }
 

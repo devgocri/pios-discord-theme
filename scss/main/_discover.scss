@@ -5,13 +5,13 @@
 // ---- Explore public servers ----
 
 // Background
-.appMount_ea7e65 .pageWrapper_a3a4ce {
+.appMount__51fd7 .pageWrapper_a3a4ce {
     background-color: $background-color;
     @include bd.border(thick);
 }
 
 // Search results searchbox
-.appMount_ea7e65 .searchBox__56feb {
+.appMount__51fd7 .searchBox__56feb {
     background-color: hsla.default($accent-hue, 0.2);
     backdrop-filter: brightness(0);
 }
@@ -48,17 +48,17 @@
 }
 
 // Language dropdown
-.lookFilled_f6639d.select_f6639d {
+.lookFilled__3f413.select__3f413 {
     border-color: transparent;
     color: $dim-color;
 }
 
-.popout_f6639d {
+.popout__3f413 {
     @include bd.border(thin);
 }
 
 // Server card
-.card_eb1ca6,
+.card_e90879,
 .card_e825f6 {
     @include bd.border(thin);
 }
@@ -69,6 +69,6 @@
 }
 
 // Student hub icon
-.iconContainer_f11cbf {
+.iconContainer_a76561 {
     background-color: hsla.default($accent-hue, 0.7);
 }

@@ -3,11 +3,11 @@
 @use "../vars" as *;
 
 // Forums
-.container_a6d69a {
+.container_f369db {
     @include bd.border(thick);
 
     // Forum post
-    @at-root .mainCard_a6d69a {
+    @at-root .mainCard_f369db {
         @include bd.border(thin);
         background: transparent;
 
@@ -16,58 +16,58 @@
         }
 
         // Text post footer
-        .textContentFooter_a57509 {
+        .textContentFooter__9a337 {
             background: linear-gradient(transparent, $background-color);
         }
 
         // Make new post
         // Image container
-        @at-root .container_a15d29,
-            .popout_a15d29 {
+        @at-root .container__94439,
+            .popout__94439 {
             @include bd.border(thin, bright);
 
-            @at-root .badge_a15d29 {
+            @at-root .badge__94439 {
                 background: $accent-color;
                 border: none;
             }
         }
         // Post text area
-        .channelTextArea_d0696b {
+        .channelTextArea__74017 {
             border: none;
         }
     }
 
     // Search result count row
-    @at-root .matchingPostsRow_a6d69a {
+    @at-root .matchingPostsRow_f369db {
         background: transparent;
     }
 
     // Post guildelines
-    .container_ddbb27 {
+    .container_ca49a1 {
         @include bd.border(thin);
     }
 
     // Tags
-    @at-root .tagsContainer_a6d69a {
+    @at-root .tagsContainer_f369db {
         align-items: flex-start;
 
         // Tags list
         // Expand on hover
-        @at-root .tagList_a6d69a {
+        @at-root .tagList_f369db {
             height: unset;
             max-height: 32px;
             transition: max-height 0.2s ease;
             &:hover,
-            &:has(.selected_c993da) {
+            &:has(.selected_a2c9e8) {
                 max-height: 128px;
             }
 
             // Tags
-            @at-root .pill_c993da.pill_c993da {
+            @at-root .pill_a2c9e8.pill_a2c9e8 {
                 @include bd.border(thin);
                 background: $background-color;
 
-                &.selected_c993da {
+                &.selected_a2c9e8 {
                     border-color: $accent-color;
                     background-color: hsla.default($accent-hue, 0.3);
                     --background-tertiary: #{hsla.default($accent-hue, 0.3)};
@@ -75,48 +75,48 @@
             }
 
             // // Hoist selected tag to top
-            // .tag_a6d69a.selected_c993da {
+            // .tag_f369db.selected_a2c9e8 {
             //     order: -1;
             // }
         }
 
         // "See all tags" dropdown
-        @at-root .tagsButton_a6d69a {
+        @at-root .tagsButton_f369db {
             position: static;
 
-            @at-root .countContainer_a6d69a,
-                .countContainer_ae4f46 {
+            @at-root .countContainer_f369db,
+                .countContainer__5808f {
                 background: $accent-color;
             }
         }
 
         // "See more tags" dropdown that currently does nothing
-        @at-root .tagsButtonPlaceholder_a6d69a {
+        @at-root .tagsButtonPlaceholder_f369db {
             display: none;
         }
     }
 }
 
 // Scroller in opened forum post, make actions bar actually sticky
-.scrollerInner_e2e187 {
+.scrollerInner__36d07 {
     overflow: unset;
 
     // Actions bar
-    @at-root .container_b385c8 {
-        @at-root :is(.addReactButton_b385c8, .buttonInner_b385c8) {
+    @at-root .container__34c2c {
+        @at-root :is(.addReactButton__34c2c, .buttonInner__34c2c) {
             @include bd.border(thin);
             &:hover {
                 border-color: $dim-color;
             }
 
-            &:is(.active_f61c73, .active_b385c8) {
+            &:is(.active_f8896c, .active__34c2c) {
                 border-color: $accent-color;
                 background-color: hsla.default($accent-hue, 0.3);
 
                 &:is(:hover, :active) {
                     color: $accent-color;
 
-                    .icon_f61c73 {
+                    .icon_f8896c {
                         color: inherit;
                     }
                 }

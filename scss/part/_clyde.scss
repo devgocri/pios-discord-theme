@@ -2,16 +2,16 @@
 @use "../hsla";
 
 // Messages from Clyde now appear as SYSTEM
-.compact_f9f2ca.wrapper_f9f2ca.ephemeral_d5deea,
-.cozyMessage_d5deea.wrapper_f9f2ca.ephemeral_d5deea,
-.message_d5deea.ephemeral_d5deea.selected_d5deea,
-.mouse-mode.full-motion .ephemeral_d5deea:hover {
+.compact_c19a55.wrapper_c19a55.ephemeral__5126c,
+.cozyMessage__5126c.wrapper_c19a55.ephemeral__5126c,
+.message__5126c.ephemeral__5126c.selected__5126c,
+.mouse-mode.full-motion .ephemeral__5126c:hover {
     border-color: hsla.default($accent-hue, 0.7);
     background-color: transparent;
 }
 
 // No left bar
-.ephemeral_d5deea:before {
+.ephemeral__5126c:before {
     display: none;
 }
 
@@ -21,21 +21,21 @@
 }
 
 // Change avatar
-.ephemeral_d5deea .avatar_f9f2ca {
+.ephemeral__5126c .avatar_c19a55 {
     filter: contrast(2) saturate(100) invert(1);
 }
 
-.full-motion .avatar_f9f2ca.clickable_f9f2ca:hover {
+.full-motion .avatar_c19a55.clickable_c19a55:hover {
     filter: hue-rotate(130deg) contrast(2) saturate(100);
 }
 
 // Change name
-.ephemeral_d5deea .username_f9f2ca {
+.ephemeral__5126c .username_c19a55 {
     visibility: hidden;
     padding-right: 0.5rem;
 }
 
-.ephemeral_d5deea .username_f9f2ca::after {
+.ephemeral__5126c .username_c19a55::after {
     visibility: visible;
     content: "SYSTEM";
     display: block;
@@ -46,23 +46,23 @@
     background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.ephemeral_d5deea .username_f9f2ca:hover::after {
+.ephemeral__5126c .username_c19a55:hover::after {
     text-decoration: underline;
 }
 
 // Totally not a bot
-.ephemeral_d5deea .botTag_f9f2ca {
+.ephemeral__5126c .botTag_c19a55 {
     display: none;
 }
 
 // Timestamp
-.ephemeral_d5deea .timestamp_f9f2ca,
-.ephemeral_d5deea .timestamp_f9f2ca.alt_f9f2ca {
+.ephemeral__5126c .timestamp_c19a55,
+.ephemeral__5126c .timestamp_c19a55.alt_c19a55 {
     color: $clyde-color-dim;
 }
 
 // Content
-.ephemeral_d5deea .markup_f8f345 {
+.ephemeral__5126c .markup__75297 {
     color: $clyde-color;
     text-shadow:
         2px 0 10px $clyde-color,
@@ -75,13 +75,13 @@
 }
 
 // Dismiss message box
-.ephemeralMessage_cabade {
+.ephemeralMessage__124d2 {
     color: $clyde-color-dim;
     font-size: 100%;
     text-transform: uppercase;
 }
 
-.compact_f9f2ca .ephemeralMessage_cabade {
+.compact_c19a55 .ephemeralMessage__124d2 {
     position: absolute;
     right: 0;
     background: linear-gradient(transparent, $background-color 50%, transparent 70%);
@@ -91,6 +91,6 @@
     gap: 0.6rem;
 }
 
-.ephemeralMessage_cabade .anchor_af404b {
+.ephemeralMessage__124d2 .anchor_edefb8 {
     color: $clyde-color;
 }

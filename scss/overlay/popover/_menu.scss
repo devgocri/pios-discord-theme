@@ -3,29 +3,29 @@
 
 // ---- General menu popover ----
 // Option in menu when hovered
-.colorDefault_d90b3d {
-    &.focused_d90b3d {
+.colorDefault_c1e9c4 {
+    &.focused_c1e9c4 {
         background-color: hsla.default($accent-hue, 0.2);
     }
-    &:active:not(.hideInteraction_d90b3d) {
+    &:active:not(.hideInteraction_c1e9c4) {
         background-color: hsla.default($accent-hue, 0.7);
     }
-    .checkbox_d90b3d,
-    .radioSelection_d90b3d {
+    .checkbox_c1e9c4,
+    .radioSelection_c1e9c4 {
         color: $accent-color;
     }
 }
 // Menu slider bar
-.barFill_c7a159 {
+.barFill_a562c8 {
     background: $accent-color;
 }
 // Menu selected option checkbox
-.activeIcon_e1268c path {
+.activeIcon_d40c56 path {
     fill: $accent-color;
 }
 
 // Nonstandard option
-.customLabelContainer_b6bf2d {
+.customLabelContainer_c2c6a6 {
     &:hover {
         background: hsla.default($accent-hue, 0.2);
     }

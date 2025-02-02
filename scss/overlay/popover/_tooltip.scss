@@ -2,16 +2,16 @@
 @use "../../border" as bd;
 
 // ---- Tooltips ----
-.tooltip_b6c360 {
+.tooltip__382e7 {
     @include bd.border(thin, bright);
 }
 
 // Arrow towards tooltip source
-.tooltipPointer_b6c360 {
+.tooltipPointer__382e7 {
     display: none;
 }
 
 // "Verified" connection tooltip
-.appMount_ea7e65 .tooltipBrand_b6c360 {
+.appMount__51fd7 .tooltipBrand__382e7 {
     background-color: $background-color;
 }

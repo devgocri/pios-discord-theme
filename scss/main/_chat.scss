@@ -3,47 +3,47 @@
 @use "../hsla";
 
 // Main chat section
-.chatContent_a7d72e {
+.chatContent_f75fb0 {
     @include bd.border(thick);
 }
 
 // "Jump to present", "New messages since", "Messages failed to load" bars
-.jumpToPresentBar_cf58b5,
-.newMessagesBar_cf58b5,
-.messagesErrorBar_cf58b5 {
+.jumpToPresentBar__0f481,
+.newMessagesBar__0f481,
+.messagesErrorBar__0f481 {
     background-color: $accent-color;
     opacity: 0.9;
 }
 
 // Messages allow overflow in case of oversize embeds
-.message_c06487,
-.message_ddb5b4 {
+.message__1ccd1,
+.message__95796 {
     overflow: visible;
 }
 
 // Message react/reply etc buttons
-.wrapper_ef319f {
+.wrapper_f7ecac {
     @include bd.border(thin);
 }
 
 // Pin icon for pin alerts
-.iconContainer_e62b38 {
+.iconContainer__235ca {
     padding: 0.1rem;
 }
 
 // Reply/thread pipe
-.repliedMessage_f9f2ca:before,
-.cozy_f9f2ca.hasThread_f9f2ca:after {
+.repliedMessage_c19a55:before,
+.cozy_c19a55.hasThread_c19a55:after {
     border-left-width: 3px;
     border-top-width: 1px;
 }
 
-.cozy_f9f2ca.hasThread_f9f2ca:after {
+.cozy_c19a55.hasThread_c19a55:after {
     border-bottom-width: 1px;
 }
 
 // piOS style message boxes in compact mode
-.compact_f9f2ca.wrapper_f9f2ca {
+.compact_c19a55.wrapper_c19a55 {
     @include bd.border(thin);
     margin: calc(var(--pios-spacing) * 1.5rem) 3rem;
     padding: 1rem 1rem 0.5rem 1rem;
@@ -51,12 +51,12 @@
 }
 
 // Remove box if system message eg. pin
-.compact_f9f2ca.wrapper_f9f2ca.systemMessage_d5deea {
+.compact_c19a55.wrapper_c19a55.systemMessage__5126c {
     border: 0;
 }
 
 // Message info
-.compact_f9f2ca .header_f9f2ca {
+.compact_c19a55 .header_c19a55 {
     position: absolute;
     top: -1.6rem;
     display: flex;
@@ -64,110 +64,110 @@
     background: linear-gradient(transparent, $background-color 40%, transparent 60%);
 }
 
-.compact_f9f2ca .header_f9f2ca > span {
+.compact_c19a55 .header_c19a55 > span {
     display: block;
 }
 
 // Hides timestamps for the same time as previous message
-.compact_f9f2ca .timestampVisibleOnHover_f9f2ca {
+.compact_c19a55 .timestampVisibleOnHover_c19a55 {
     width: 0;
     color: transparent;
 }
 
 // Badges from ShowBadgesInChat https://github.com/mwittrien/BetterDiscordAddons/tree/master/Plugins/ShowBadgesInChat///
-.compact_f9f2ca .badgesChat-f_cbR8 {
+.compact_c19a55 .badgesChat-f_cbR8 {
     top: 0;
 }
 
 // Corrects alignment of username when badges are present
-.compact_f9f2ca .username_f9f2ca {
+.compact_c19a55 .username_c19a55 {
     vertical-align: top;
 }
 
 // Special message left bar
-.automodMessage_d5deea:before,
-.ephemeral_d5deea:before,
-.mentioned_d5deea:before,
-.replying_d5deea:before {
+.automodMessage__5126c:before,
+.ephemeral__5126c:before,
+.mentioned__5126c:before,
+.replying__5126c:before {
     width: 3px;
 }
 
 // Reply
 // Post username and timestamp
-.compact_f9f2ca.hasReply_f9f2ca .header_f9f2ca,
-.compact_f9f2ca .repliedMessage_f9f2ca + .contents_f9f2ca .header_f9f2ca {
+.compact_c19a55.hasReply_c19a55 .header_c19a55,
+.compact_c19a55 .repliedMessage_c19a55 + .contents_c19a55 .header_c19a55 {
     top: -2.7rem;
 }
 
 // Replied content
-.compact_f9f2ca .repliedMessage_f9f2ca {
+.compact_c19a55 .repliedMessage_c19a55 {
     margin-left: 0;
     padding-left: 0;
     top: -2px;
 }
 
-.executedCommand_f9f2ca,
-.threadMessageAccessory_f9f2ca {
+.executedCommand_c19a55,
+.threadMessageAccessory_c19a55 {
     height: auto;
 }
 
-.compact_f9f2ca .repliedMessage_f9f2ca .timestamp_f9f2ca {
+.compact_c19a55 .repliedMessage_c19a55 .timestamp_c19a55 {
     line-height: 1rem;
     height: auto;
 }
 
 // Replied elbow
-.compact_f9f2ca .repliedMessage_f9f2ca::before {
+.compact_c19a55 .repliedMessage_c19a55::before {
     display: none;
 }
 
 // Icons inside replied content
-.compact_f9f2ca .repliedMessage_f9f2ca .repliedTextContentIcon_da8b30,
-.compact_f9f2ca .repliedMessage_f9f2ca .badgesChat-f_cbR8 img,
-.compact_f9f2ca .repliedMessage_f9f2ca .ownerIcon_a31c43,
-.compact_f9f2ca .repliedMessage_f9f2ca .emoji {
+.compact_c19a55 .repliedMessage_c19a55 .repliedTextContentIcon_da8b30,
+.compact_c19a55 .repliedMessage_c19a55 .badgesChat-f_cbR8 img,
+.compact_c19a55 .repliedMessage_c19a55 .ownerIcon__5d473,
+.compact_c19a55 .repliedMessage_c19a55 .emoji {
     width: 1rem;
     height: 1rem;
 }
 
 // message react/reply etc buttons
-.compact_f9f2ca .container_a3b500 {
+.compact_c19a55 .container__040f0 {
     top: -16px;
 }
 
 // Message contents
-.compact_f9f2ca .contents_f9f2ca {
+.compact_c19a55 .contents_c19a55 {
     margin: 0;
     padding-left: 0;
     text-indent: 0;
 }
 
 // Block quote starter
-.blockquoteContainer_f8f345 .blockquoteDivider_f8f345 {
+.blockquoteContainer__75297 .blockquoteDivider__75297 {
     width: 3px;
 }
 
 // Embeds
-.embedFull_ad0b71.markup_f8f345,
+.embedFull__623de.markup__75297,
 // most embeds
-.appMount_ea7e65 .wrapperAudio_f316dd,
+.appMount__51fd7 .wrapperAudio_f316dd,
 // audio
-.attachment_a4623d,
+.fileWrapper__0ccae,
 // file
-.wrapper_b9fe76,
+.wrapper_d5f3cd,
 // invite
-.footer_ad9cbd // code/text
+.footer__4d95d // code/text
 {
     background: $embed-color;
     border: 0;
     text-shadow: none;
 }
 
-.grid_ad0b71 {
+.grid__623de {
     padding: 12px 18px;
 }
 
-.embedMargin_ad0b71 {
+.embedMargin__623de {
     margin-top: 0;
 }
 
@@ -178,7 +178,7 @@
 }
 
 // play buttons on video
-.wrapper_c8da25 {
+.wrapper__926d7 {
     padding: 12px;
 }
 
@@ -197,12 +197,12 @@
 }
 
 // Reacts you have added
-:is(.reaction_ec6b19, .reaction_f61c73) {
+:is(.reaction__23977, .reaction_f8896c) {
     :is(&, &:hover) {
         @include bd.border(thin);
         background: transparent;
 
-        &:is(.reactionMe_ec6b19, .reactionMe_f61c73) {
+        &:is(.reactionMe__23977, .reactionMe_f8896c) {
             border-color: $accent-color;
             background-color: hsla.default($accent-hue, 0.3);
         }
@@ -210,7 +210,7 @@
 }
 
 // Mention
-.wrapper_bf1b19 {
+.wrapper_f61d60 {
     background: hsla.default($accent-hue, 0.3);
     color: $bright-color;
 
@@ -222,12 +222,12 @@
 // Thread from message
 // Thread spine
 // Upper
-.compact_f9f2ca.hasThread_f9f2ca .contents_f9f2ca::before {
+.compact_c19a55.hasThread_c19a55 .contents_c19a55::before {
     display: none;
 }
 
 // Lower
-.spine_c15230 {
+.spine__9271d {
     top: 0.15rem;
     left: 0rem;
     z-index: -1;
@@ -236,91 +236,91 @@
 }
 
 // Thread info
-.container_c15230 {
+.container__9271d {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
-.compact_f9f2ca .container_c15230 {
+.compact_c19a55 .container__9271d {
     position: relative;
     left: 2.5rem;
 }
 
 // Typing box
-.channelTextArea_d0696b {
+.channelTextArea__74017 {
     @include bd.border(thick);
 }
 
-.scrollableContainer_d0696b {
+.scrollableContainer__74017 {
     min-height: 60px;
 }
 
 // "Replying to" bar
-.attachedBars_d0696b {
+.stackedBars__74017 {
     background: transparent;
     border-bottom: 2px dashed $border-color-normal;
 }
 
 // @on button
-.mentionButton_b11c5e {
+.mentionButton__841c8 {
     color: $accent-color;
 }
 
 // Uploading files bar
-.upload_df1eaf {
+.upload_aa605f {
     background-color: $embed-color;
 }
 
 // Command suggestions bar
-.appMount_ea7e65 .selected-3H3-RC,
-.appMount_ea7e65 .option_bea3ee {
+.appMount__51fd7 .selected-3H3-RC,
+.appMount__51fd7 .option_a19535 {
     background-color: hsla.default($accent-hue, 0.3);
 }
 
 // follow to get this channel's updates in your server add dotted topline
-.form_a7d72e .wrapper_faf5ab {
+.form_f75fb0 .wrapper__44df5 {
     border-top: 2px dashed $border-color-normal;
     margin-top: 0;
 }
 
 // Forums
-.appMount_ea7e65 .container_a6d69a {
+.appMount__51fd7 .container_f369db {
     background: $background-color;
 }
 
 // Post title
-.card_a6d69a .headerText_d331f1 {
+.card_f369db .headerText_faa96b {
     --text-muted: #{$bright-color};
 }
 
 // Post message preview
-.card_a6d69a .markup_f8f345 {
+.card_f369db .markup__75297 {
     text-shadow: none;
 }
 
 // Browse channels
-.appMount_ea7e65 .container_f1fd9c,
-.appMount_ea7e65 .header_f1fd9c,
-.appMount_ea7e65 .container_c2efea {
+.appMount__51fd7 .container__0b563,
+.appMount__51fd7 .header__0b563,
+.appMount__51fd7 .container_c2efea {
     background: $background-color;
 }
 
 // Poll
-.pollContainer_b558d0 {
+.pollContainer_b7e1cb {
     @include bd.border(thin);
     background: $background-color;
 
     // Answer
-    @at-root .answer_cf2c85 {
+    @at-root .answer__4c520 {
         // Default
-        &.normalStylesDefault_b5cb3c {
+        &.normalStylesDefault_a1443c {
             --custom-poll-style-vote-percentage: #{$embed-color};
             --custom-poll-style-border: #{$embed-color};
         }
 
         // Voted
-        &.votedStyles_b5cb3c,
+        &.votedStyles_a1443c,
         // Winner
-        &.victorStyles_b5cb3c {
+        &.victorStyles_a1443c {
             --custom-poll-style-vote-percentage: #{$accent-color};
             --custom-poll-style-border: #{$accent-color};
             path {
@@ -328,11 +328,11 @@
             }
         }
 
-        .answerInner_cf2c85 {
+        .answerInner__4c520 {
             @include bd.border(thin);
             background: transparent;
 
-            &.currentlyVoting_cf2c85.selected_cf2c85 {
+            &.currentlyVoting__4c520.selected__4c520 {
                 --control-brand-foreground: #{$accent-color};
             }
         }

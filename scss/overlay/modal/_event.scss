@@ -4,21 +4,21 @@
 
 // Event and new event modal
 // Event card
-.appMount_ea7e65 .previewCard_f9a98f,
-.card_cc2c09 {
+.appMount__51fd7 .previewCard_f70348,
+.card__88264 {
     @include bd.border(thin);
 }
 
 // Event cover image
-.imageUploaderInner_de76e4 {
+.imageUploaderInner_e4d0bf {
     background-color: hsla.default($accent-hue, 0.2);
 }
 
-.avatarUploadIcon_e9b3be.hideDefaultIcon_e9b3be {
+.avatarUploadIcon_e04502.hideDefaultIcon_e04502 {
     background-color: hsla.default($accent-hue, 0.7);
 }
 
-.imageUploaderIcon_de76e4 path {
+.imageUploaderIcon_e4d0bf path {
     fill: $bright-color;
 }
 

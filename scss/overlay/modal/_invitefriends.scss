@@ -3,13 +3,13 @@
 
 // ---- Invite friends to server modal ----
 // Copy url
-.copyInput_cedfaf .input_f8bc55 {
+.copyInput_cedfaf .input__0f084 {
     background: transparent;
 }
 
 // Invite link settings
 // Selected item icon
-.selectedIcon_f6639d {
+.selectedIcon__3f413 {
     color: $dim-color;
 }
 
@@ -19,11 +19,11 @@
 }
 
 // Search results
-.appMount_ea7e65 .inviteRow_cedfaf:hover {
+.appMount__51fd7 .inviteRow__67dba:hover {
     background: hsla.default($accent-hue, 0.2);
 }
 
 // "Invite" button
-.inviteRowButton_cedfaf {
+.inviteRowButton__67dba {
     padding: 2px;
 }

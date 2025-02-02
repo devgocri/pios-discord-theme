@@ -2,37 +2,37 @@
 @use "../glow";
 
 // Chat content text glow
-.markup_f8f345 {
+.markup__75297 {
     text-shadow:
         2px 0 10px $glow-color,
         -2px 0 10px $glow-color;
 }
 
-.repliedTextContent_f9f2ca.markup_f8f345,
-.edited_f9f2ca,
-.markup_f8f345 code.hljs,
-.markup_f8f345 code.inline,
+.repliedTextContent_c19a55.markup__75297,
+.edited_c19a55,
+.markup__75297 code.hljs,
+.markup__75297 code.inline,
 .timestamp__28d64,
-.timestamp_f9f2ca,
-.timestampInline_f9f2ca,
-.threadMessageAccessoryPreview_f9f2ca .markup_f8f345 {
+.timestamp_c19a55,
+.timestampInline_c19a55,
+.threadMessageAccessoryPreview_c19a55 .markup__75297 {
     text-shadow: none;
 }
 
 // Hyperlinks
-.markup_f8f345 a {
+.markup__75297 a {
     @include glow.text(20px);
 }
 
 // Role pings, pin/join/thread alert messages, selected text
-.wrapper_bf1b19,
-.content_e62b38,
+.wrapper_f61d60,
+.content__235ca,
 ::selection {
     @include glow.text(10px);
 }
 
 // Member list usernames with role colours
-.username_a31c43 {
+.username__5d473 {
     @include glow.text(5px);
 }
 
@@ -48,7 +48,7 @@ span[style="color: rgb(1, 1, 1);"] {
 }
 
 // Status glow
-.wrapper_c51b4e {
+.wrapper__44b0c {
     @include glow.status(#23a55a, 139, 47.3%, 43.9%);
     @include glow.status(#f0b232, 38, 95.7%, 54.1%);
     @include glow.status(#f23f43, 359, 82.6%, 59.4%);
@@ -56,11 +56,11 @@ span[style="color: rgb(1, 1, 1);"] {
 }
 
 // Do not clip chat content glow
-.zalgo_f9f2ca .messageContent_f9f2ca {
+.zalgo_c19a55 .messageContent_c19a55 {
     overflow: visible;
 }
 
 // Boosts bar
-.progressBarContainer_c75f85 {
+.progressBarContainer_eff079 {
     box-shadow: 0 0 10px $glow-color;
 }
